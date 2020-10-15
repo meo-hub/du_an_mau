@@ -54,6 +54,19 @@ $_SESSION['nextPage'] = ($curenPage >= $totlaPage) ? $totlaPage : $curenPage + 1
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <?php include('layout/style.php') ?>
+    <style>
+        .shop__sidebar__accordion .card-heading.active a::after {
+            content: "";
+            font-family: FontAwesome;
+            font-size: 24px;
+            font-weight: 700;
+            color: rgb(17, 17, 17);
+            position: absolute;
+            right: 0px;
+            top: 2px;
+            line-height: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -96,7 +109,7 @@ $_SESSION['nextPage'] = ($curenPage >= $totlaPage) ? $totlaPage : $curenPage + 1
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseOne">Danh mục sản phẩm</a>
+                                        <a data-toggle="collapse" data-target="#collapseOne">list Product Type</a>
                                     </div>
                                     <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
                                         <div class="card-body">
@@ -121,19 +134,12 @@ $_SESSION['nextPage'] = ($curenPage >= $totlaPage) ? $totlaPage : $curenPage + 1
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__product__option__left">
-                                    <p>Hiển thị </p>
+                                    <p>Hiển thị
+                                        <?echo(count($dataRender))?> trên
+                                        <?echo($listRow)?> sản phẩm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="shop__product__option__right">
-                                    <p>Sort by Price:</p>
-                                    <select>
-                                        <option value="">Low To High</option>
-                                        <option value="">$0 - $55</option>
-                                        <option value="">$55 - $100</option>
-                                    </select>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <div class="row">
