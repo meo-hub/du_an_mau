@@ -138,3 +138,4 @@ function adminConnectLogo()
 //     $_SESSION['nextPage'] = ($curenPage >= $totlaPage) ? $totlaPage : $curenPage + 1;
 //     return $dataRender;
 // }
+

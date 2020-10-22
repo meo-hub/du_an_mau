@@ -1,15 +1,16 @@
 <?php
 session_start();
-require_once './lib/common.php';
-require_once './lib/db.php';
+require_once 'lib/common.php';
+require_once 'lib/db.php';
 
+$email = isset($_POST['email']) ? $_POST['email'] : "";
 $checkEmail = "select * from users where email = '$email'";
 
 
 $passworderr = "";
 $emailerror = "";
 
-$email = isset($_POST['email']) ? $_POST['email'] : "";
+
 
 $password = isset($_POST['password']) ? $_POST['password'] : "";
 

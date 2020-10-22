@@ -1475,7 +1475,6 @@ ol {
 	height: 30px;
 	width: 30px;
 	border: 1px solid transparent;
-	border-radius: 50%;
 	line-height: 30px;
 	text-align: center;
 }
@@ -1495,6 +1494,9 @@ ol {
 	color: #111111;
 	padding-left: 10px;
 	padding-right: 15px;
+}
+.product__pagination a:hover{
+	border: 1px solid;
 }
 
 /*---------------------
