@@ -77,49 +77,27 @@ $cates = $stmt->fetchAll();
                     <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
                     <br>
                     <label for="">Đặc biệt</label>
-                    <input type="text" name="especially" class="form-control" >
+                    <input type="number" name="especially" class="form-control" value="1" disabled>
                     <?php if(isset($_GET['esperr'])):?>
                     <span class="text-danger"><?= $_GET['esperr'] ?></span>
                     <?php endif ?>
                     <br>
-
                     <div class="form-group">
                         <label for="">Loại sản phẩm</label>
                         <select name="type">
-
                             <?php foreach($cates as $c):?>
-
-                            <option class="form-control" <?php
-                                    
+                            <option class="form-control" <?php 
                                 ?> value="<?= $c['id_product_type'] ?>">
                                 <?= $c['name_product_type']?>
                             </option>
                             <?php endforeach ?>
                         </select>
-
-
-
                     </div>
-
-
-
-
                     <button type="submit" class="btn btn-primary ">Lưu mới</button>
                     <button type="unset" class="btn btn-primary">Thoát</button>
                 </form>
             </div>
-
-
-
-            <div class="row">
-                <div class="col-md-6">
-
-                </div>
-
-                <div class="col-md-6">
-
-                </div>
-            </div>
+            
         </div>
     </div>
 
@@ -153,17 +131,10 @@ $cates = $stmt->fetchAll();
             <p class="copyright pull-right">
                 &copy; <script>
                 document.write(new Date().getFullYear())
-                </script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                </script> <a href="http://www.creative-tim.com">Creative meosss</a>, made with love for a better web
             </p>
         </div>
     </footer>
-
-    </div>
-    </div>
-
-
 </body>
-
-<!-- chèn javascrip -->
 
 </html>

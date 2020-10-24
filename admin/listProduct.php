@@ -15,7 +15,7 @@ $comment = adminConnectListComment();
 
 
 // phan trang
-$rowRender = 5;
+$rowRender = 3;
 $totalRow = "SELECT COUNT(*) FROM product ";
 $conn = getDbConnect();
 $stmt = $conn->prepare($totalRow);
@@ -227,7 +227,4 @@ $_SESSION['nextPage'] = ($curenPage >= $totlaPage) ? $totlaPage : $curenPage + 1
 
 
 </body>
-
-<!-- chèn javascrip -->
-
 </html>

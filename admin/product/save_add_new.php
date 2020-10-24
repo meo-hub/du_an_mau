@@ -24,7 +24,7 @@ $date = $_POST['date'];
 
 $des = $_POST['description'] ; 
 
-$esp = $_POST['especially'];
+$esp = 1;
 $espErr = '';
 $type = $_POST['type'];
 
@@ -50,13 +50,7 @@ if($imgErr != ""){
     die;
 }
 
-if(!is_int($esp)){
-    $espErr="yêu cầu nhập số nguyên";
-}
-if($espErr != ""){
-    header("location: " . BASE_URL . "admin/product/add_new.php?esperr=$espErr");
-    die;
-}
+
 // var_dump($name);
 // die();
 
@@ -80,7 +74,6 @@ if($avatar['size']>0){
 }
 $path = 'admin/assets/upload/' . $filename;
 // die($path);
-// mã hóa mật khẩu
 
 // 4. Tạo câu query để insert data
 $insertQuery = "insert into product

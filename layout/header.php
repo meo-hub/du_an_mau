@@ -64,8 +64,8 @@
                     <ul>
                         <li class="active"><a href="<?= BASE_URL . "index.php" ?>">TRANG CHỦ</a></li>
                         <li><a href="<?= BASE_URL . "shop.php" ?>">SHOP</a></li>
-                        <li><a href="#">GIỚI THIỆU</a></li>
-
+                        <li><a href="<?= BASE_URL . "about.php" ?>">GIỚI THIỆU</a></li>
+                        <li><a href="http://localhost:8080/php/du_an_web204/contact.php">CONTACT</a></li>
 
                     </ul>
                 </nav>

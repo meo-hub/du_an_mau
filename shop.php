@@ -7,11 +7,10 @@ require_once "lib/common.php";
 $admins = adminConnectListAdmin();
 $users = adminConnectListUser();
 $productType = adminConnectListProductType();
-// $product = pagination();
 $comment = adminConnectListComment();
 
 // phan trang
-$rowRender = 5;
+$rowRender = 3;
 $totalRow = "SELECT COUNT(*) FROM product ";
 $conn = getDbConnect();
 $stmt = $conn->prepare($totalRow);
@@ -77,12 +76,6 @@ $_SESSION['nextPage'] = ($curenPage >= $totlaPage) ? $totlaPage : $curenPage + 1
             <div class="row">
                 <div class="col-lg-3">
                     <div class="shop__sidebar">
-                        <div class="shop__sidebar__search">
-                            <form action="#">
-                                <input type="text" placeholder="Search...">
-                                <button type="submit"><span class="icon_search"></span></button>
-                            </form>
-                        </div>
                         <div class="shop__sidebar__accordion">
                             <div class="accordion" id="accordionExample">
                                 <div class="card">

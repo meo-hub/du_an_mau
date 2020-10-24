@@ -7,19 +7,21 @@ require_once "lib/common.php";
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
     <?php include('layout/style.php') ?>
 </head>
-<body>
-    <?php include('layout/header.php')?>
 
-    
+<body>
+    <?php include('layout/header.php') ?>
+
+
     <!-- Map Begin -->
     <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d781.9294088450324!2d105.28651769469613!3d21.576659592035103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134bc1f285bffa7%3A0xb49bbc2c4c3d3982!2zQ2hpIFRoaeG6v3QsIFPGoW4gRMawxqFuZyBEaXN0cmljdCwgVHV5w6puIFF1YW5nLCBWaWV0bmFt!5e1!3m2!1sen!2s!4v1601430358450!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d781.9294088450324!2d105.28651769469613!3d21.576659592035103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134bc1f285bffa7%3A0xb49bbc2c4c3d3982!2zQ2hpIFRoaeG6v3QsIFPGoW4gRMawxqFuZyBEaXN0cmljdCwgVHV5w6puIFF1YW5nLCBWaWV0bmFt!5e1!3m2!1sen!2s!4v1601430358450!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
     <!-- Map End -->
 
     <!-- Contact Section Begin -->
@@ -31,14 +33,14 @@ require_once "lib/common.php";
                         <div class="section-title">
                             <span>Thông tin</span>
                             <h2>Liên hệ chúng tôi</h2>
-                            <p>Như bạn có thể mong đợi về một công ty khởi đầu là một nhà thầu nội thất cao cấp, chúng tôi rất chú ý.</p>
+                            <p>Như bạn có thể mong đợi về một công ty khởi đầu là một nhà cung cấp sản phẩm cao cấp, chúng tôi rất chú ý.</p>
                         </div>
                         <ul>
                             <li>
                                 <h4>Việt Nam</h4>
-                                <p>Số 1 , Đường Trịnh Văn Bô , Nam Từ Liêm , Hà Nội</p>
+                                <p>Trường cao đẳng FPT Polytechnich</p>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -66,11 +68,12 @@ require_once "lib/common.php";
     <!-- Contact Section End -->
 
     <!-- Footer Section Begin -->
-    
 
- <?php  
-include('layout/footer.php');
 
-?>   
+    <?php
+    include('layout/footer.php');
+
+    ?>
 </body>
+
 </html>
